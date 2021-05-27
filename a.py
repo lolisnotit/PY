@@ -95,3 +95,7 @@ while True:
  
 cap.release()
 cv2.destroyAllWindows()
+import serial
+arData = serial.Serial('COM4',9600)
+arData.write('2')
+arData.write('6')
